@@ -39,8 +39,10 @@ scene.add(camera)
 
 function animate() {
 	requestAnimationFrame( animate );
-	cube.rotation.x += 0.01;
-        cube.rotation.y += 0.01;
+	blueCube.rotation.y += 0.01;
+        redCube.rotation.y += 0.01;
+	yellowCube.rotation.y += 0.01;
+	greenCube.rotation.y += 0.01;
 	renderer.render( scene, camera );
 }
 animate();
