@@ -37,5 +37,8 @@ var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHe
 
 scene.add(camera)
 
-// Render the scene
-renderer.render(scene, camera);
+function animate() {
+	requestAnimationFrame( animate );
+	renderer.render( scene, camera );
+}
+animate();
